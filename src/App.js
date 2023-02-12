@@ -1,14 +1,11 @@
 import './App.css';
 import Header from './Components/Headers'
-import Dynamic from './Components/Dynamic'
-import New from './Components/New'
+import MainComponent from './Components/Main'
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Dynamic/>
-      {/* <Questionbox/> */}
-      {/* <New/> */}
+      <MainComponent />
     </div>
   );
 }

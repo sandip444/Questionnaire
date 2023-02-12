@@ -11,8 +11,6 @@ const DynamicComponentList = () => {
             value: ''
         };
         setComponents([...components, newComponent]);
-        console.log(selectItem)
-        console.log(question)
     };
 
     const handleRemoveComponent = (id) => {
