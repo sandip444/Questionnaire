@@ -14,25 +14,274 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: absolute;
+  height: 72px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: #AE0000;
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.16);
+}
+
+.Header-icon{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 10% !important;
+  bottom: 0.79%;
+  height: 50px;
+  width: 45px;
+  background: white;
+}
+.button{
+    width: 50px;
+    height: 13px;
+  
+    font-family: 'GT Cinetype';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 13px;
+    /* identical to box height, or 108% */
+  
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    /* White */
+
+    color: #FFFFFF;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.Header-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2px; */
+    gap: 10px;
+    position: absolute;
+    width: 75px;
+    height: 30px;
+    right: 20px;
+    top: calc(50% - 30px/2);
+    background: rgba(245, 245, 241, 0.2);
+}
+.Header-title{
+    position: absolute;
+    width: 195px;
+    height: 26px;
+    left: calc(50% - 195px/2 + 0.5px);
+    /* top: calc(50% - 26px/2);  */
+    align-items: center;
+  
+    /* Fueled H5 */
+  
+    font-family: 'GT Cinetype';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  
+    /* White */
+  
+    color: #FFFFFF;
+}
+
+.Main-box{
+
+    flex-direction: column;
+    padding: 24px;
+    margin-top: 10%;
+    margin-left: 28%;
+    gap: 16px;
+    
+    width: 712px;
+    min-height: 353px;
+    
+      /* White */
+    
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    
+      /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.text-title{
+    width: 50px;
+    height: 12px;
+  
+    font-family: 'GT Cinetype';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    /* identical to box height, or 12px */
+  
+    display: flex;
+    align-items: flex-end;
+  
+    /* Black */
+  
+    color: #000000;
+  
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.input-question{
+    
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+    width: 664px;
+    height: 52px;
+  
+    /* White */
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.text-select{
+   box-sizing: border-box; 
+  
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: 15%;
+    padding: 15px;
+    gap: 0px;
+  
+    /* position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px; */
+  
+    /* White */
+  
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.input-question2{
+  box-sizing: border-box;
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 30px;
+    padding: 16px;
+  
+    width: 664px;
+    height: 52px;
+  
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.add-button{
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-left: 28%;
+  
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+  
+    width: 760px;
+    height: 40px;
+  
+    /* Fueled White */
+  
+    background: #F5F5F1;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.save-button{
+  /* Auto layout */
+  box-sizing: border-box;
+  margin-top: 30px;
+    margin-left: 28%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 10px;
+  
+    width: 760px;
+    height: 40px;
+  
+    /* Fueled Red */
+  
+    background: #AE0000;
+    color: #F5F5F1;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+}
+.checkbox-input{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.d-flex {
+  display: flex;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.close-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
